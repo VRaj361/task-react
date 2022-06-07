@@ -12,14 +12,14 @@ export const DisplayTable = () => {
         e.preventDefault();
         const data={ author: author, category: category, name: name, price: parseInt(price) }
         console.log(data)
-        axios.post("http://127.0.0.1:9999/book",data ).then((e) => {
+        axios.post("https://vrajapi.herokuapp.com/book",data ).then((e) => {
             console.log("in")
             console.log(e)
         })
     }
     const getData = (e) => {
         console.log(e)
-        axios.get("http://127.0.0.1:9999/book").then((e) => {
+        axios.get("https://vrajapi.herokuapp.com/book").then((e) => {
             console.log("in")
             console.log(e.data)
             setarr(e.data)

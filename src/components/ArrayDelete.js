@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { pureFinalPropsSelectorFactory } from 'react-redux/es/connect/selectorFactory'
 
 export const ArrayDelete = (props) => {
-
+    //tast 2
     // const [arr, setarr] = useState([{"name":'vraj',rollno:23},{"name":'v',rollno:2},{"name":'vr',rollno:13}])
     const deleteRow=(e)=>{
     
